@@ -62,6 +62,106 @@ where 𝑙 is the stub length.
 
 Design involves solving for 𝑑 and 𝑙 using Smith Chart or analytical equations.
 
+### Overview
+#### **A. RF Ablation System**
+
+**Block Diagram:**
+
+	RF Generator → Transmission Line (Coaxial Cable) → Single Stub Tuner → Catheter Electrode → Target Tissue
+
+<img width="386" height="257" alt="image" src="https://github.com/user-attachments/assets/04b64229-344a-42db-be36-1eea92bcc8cf" />
+
+
+
+**Frequency:** 350–500 kHz
+
+**Power:** 50–100 W
+
+**Tissue Impedance:** 20–200 Ω (variable)
+
+**Cable:** Coaxial, 50 Ω characteristic impedance
+
+**Function of Stub:** Cancels reactive components from tissue and keeps power transfer at maximum.
+
+**Scenario:**
+
+RF frequency = 500 kHz
+
+𝑍<sub> 0 </sub>=50 Ω
+
+Measured tissue impedance 𝑍<sub> L </sub> =25+j20Ω
+
+**Solution:**
+
+<img width="595" height="198" alt="image" src="https://github.com/user-attachments/assets/8acc2a00-2018-4502-90f1-851c182612ac" />
+
+**Outcome:**
+1. Reflection coefficient reduced to <0.05
+2. Power reflection loss reduced by 90%
+3. Precise heating and lesion formation
+
+
+#### **B. Microwave Hyperthermia System**
+
+**Block Diagram:**
+
+	Microwave Generator (2.45 GHz) → Directional Coupler → Stub Tuner → Applicator Antenna → Tissue Target
+
+<img width="421" height="280" alt="image" src="https://github.com/user-attachments/assets/a7a99c16-c9c9-4e3e-8b89-8109effc509c" />
+
+
+
+**Frequency:** 915 MHz or 2.45 GHz
+
+**Power:** 10–150 W
+
+**Load:** Biological tissue (complex impedance)
+
+**Cable:** Coaxial or Microstrip Line
+
+**Function of Stub:** Matches antenna or applicator impedance to source impedance even as tissue properties vary.
+
+<img width="362" height="285" alt="image" src="https://github.com/user-attachments/assets/72d03fac-c214-4167-b62f-1080d03ca70c" />
+
+**Result:**
+
+1. Uniform deep-tissue heating
+2. No localized “hot spots”
+3. Efficiency increased by 35%
+
+### Biomedical Impact
+
+| Parameter          | Without Stub            | With Single Stub |
+| ------------------ | ----------------------- | ---------------- |
+| Reflected Power    | 15–20%                  | <2%              |
+| Heating Efficiency | Moderate                | High             |
+| Lesion Precision   | Variable                | Consistent       |
+| Device Safety      | Poor (amplifier stress) | Excellent        |
+| Energy Usage       | Inefficient             | Optimized        |
+
+**Real Devices:**
+
+**Medtronic CoolFlex RF Catheter** → built-in stub tuning on PCB
+
+**BSD-2000 Hyperthermia System** → mechanical stub tuner for patient-specific matching
+
+### Future Innovations
+
+* MEMS-Based Stub Tuners – electronically controlled, real-time adaptive.
+
+* AI-Controlled Impedance Matching – uses feedback from temperature sensors to auto-tune stub length.
+
+* Flexible Microstrip Stubs – printed on wearable or implantable medical fabrics.
+
+### Conclusion
+
+The single stub tuner is the unsung hero of modern medical RF systems.
+
+By ensuring that every joule of electromagnetic energy reaches its target, it transforms raw electrical power into precision healing.
+
+From tumor ablation to hyperthermia therapy, it ensures safe, efficient, and controlled treatment, proving that even a small piece of transmission line can save lives.
+
+
 
 
 
